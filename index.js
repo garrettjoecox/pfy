@@ -1,5 +1,5 @@
 
-module.exports.pfy = function(method, noError) {
+module.exports = function(method, noError) {
   return function() {
     var args = Array.from(arguments);
     return new Promise((resolve, reject) => {
